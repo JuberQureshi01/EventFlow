@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Booking Confirmation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="max-w-xl w-full bg-white rounded-xl shadow-lg p-6 text-center">
+      <div class="text-4xl mb-2">🎉</div>
+      <h1 class="text-2xl font-bold text-gray-800 mb-1">Booking Confirmed!</h1>
+      <p class="text-gray-600 mb-6">
+        Your booking has been successfully confirmed! 🎉
+      </p>
+
+      <!-- Booking Details -->
+      <div class="bg-gray-50 p-4 rounded-lg text-left mb-6 space-y-1">
+        <p><strong>Event:</strong> Dummy Tech Conference 2025</p>
+        <p><strong>Date:</strong> 2025-08-01 at 10:00 AM</p>
+        <p><strong>Location:</strong> Mumbai Convention Center</p>
+        <p><strong>Attendee:</strong> Juber Qureshi</p>
+        <p><strong>Email:</strong> juber@example.com</p>
+        <p><strong>Tickets:</strong> 2</p>
+        <p><strong>Payment ID:</strong> pay_FAKE12345</p>
+        <hr class="my-2" />
+        <p class="text-red-600 font-bold">Total Price: ₹1000</p>
+      </div>
+
+      <!-- QR Code -->
+      <div class="mb-6">
+        <p class="font-medium mb-2 text-gray-700">Scan this QR at the event:</p>
+        <div class="inline-block p-2 border rounded shadow bg-white">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=DummyTicketInfo" alt="QR Code" />
+        </div>
+        <button
+          class="mt-3 text-sm text-blue-600 hover:underline"
+          onclick="alert('Fake download for now!')"
+        >
+          Download QR Code
+        </button>
+      </div>
+
+      <!-- Continue Button -->
+      <button
+        class="mt-4 px-6 py-2 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition"
+        onclick="window.location.href='/'"
+      >
+        Continue Exploring
+      </button>
+    </div>
+  </body>
+</html>
